@@ -1,20 +1,21 @@
 ﻿; 暂停脚本
-^p::Pause
+^+p::Pause
 ; 重新加载
-^r::Reload
+^+r::Reload
 
 ; 输入密码
-^l::SendInput yourpassword
+^+l::SendInput yourpassword
 
+; 检测行动结束（未实装）
 ; 0xff9602:经验橙:250, 150
 ; 0x0098DC:任务蓝:300, 60 
-; ^i::
-; Color:=getColor(300, 60)
-; MsgBox The color is %Color%.
+; ^+i::
+;     Color:=getColor(300, 60)
+;     MsgBox The color is %Color%.
 ; return
 
 ; 访问基建+清理基建和订单
-^b::
+^+b::
     {
         visitBase()
         backHome()
@@ -23,28 +24,16 @@
 return
 
 ; 回首页
-^h::backHome()
+^+h::backHome()
 
 ; 领取任务
-^t::recieveTask()
+^+t::recieveTask()
 
-; DM8,18san,115000,异铁组,G
-^m::startAct(115000,6)
+; 1-7,6san,82000,固源岩,G
+^+g::startAct(75500,88)
 
-; 1-7,6san,75000,固源岩,G
-^g::startAct(75000,20)
-
-; 3-2,15san,10500,轻锰矿,K
-^k::startAct(10500,8)
-
-; S4-1,18san,110000,异铁组+异铁块,Y
-^y::startAct(110000,6)
-
-; 4-4,18san,140000,扭转醇,N
-!n::startAct(140000,7)
-
-; 7-15,18san,139000,全新装置,Q
-^q::startAct(139000,7)
+; 7-15,18san,140000,全新装置,Q
+^+q::startAct(140000,6)
 
 visitBase(){
     IfWinExist 明日方舟 - MuMu模拟器
@@ -129,7 +118,7 @@ return color
 startAct(lasting, times){
     Send {B}
     Sleep 1800
-    Send {B}
+    Send {S}
     Sleep % lasting
     loop % times-1
     {
@@ -137,11 +126,11 @@ startAct(lasting, times){
         {
             WinActivate
             Sleep 300
-            Send {G}
+            Send {S}
             Sleep 3800
             Send {B}
             Sleep 1800
-            Send {B}
+            Send {S}
             Sleep % lasting
         }
     }

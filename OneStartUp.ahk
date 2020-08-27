@@ -3,13 +3,13 @@
 ; ////////////////////////////////////////////
 ; AHK脚本启动管理器（自身）
 scriptTitle0:="OneStartUp.ahk - AutoHotkey"
-scriptPath0:="D:\Software\links\OneStartUp.ahk"
+scriptPath0:="OneStartUp.ahk"
 ; 明日方舟护肝助手
 scriptTitle1:="Arknights.ahk - AutoHotkey"
-scriptPath1:="D:\Software\links\AHK Scripts\Arknights.ahk"
+scriptPath1:="AHK Scripts/Arknights.ahk"
 ; 音量切换助手
 scriptTitle2:="SwitchAudio.ahk - AutoHotkey"
-scriptPath2:="D:\Software\links\AHK Scripts\SwitchAudio.ahk"
+scriptPath2:="AHK Scripts/SwitchAudio.ahk"
 
 ; ////////////////////////////////////////////
 ; //////////////////脚本启动器/////////////////
