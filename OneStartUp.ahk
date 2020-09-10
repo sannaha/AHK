@@ -10,6 +10,9 @@ scriptPath1:="AHK Scripts/Arknights.ahk"
 ; 音量切换助手
 scriptTitle2:="SwitchAudio.ahk - AutoHotkey"
 scriptPath2:="AHK Scripts/SwitchAudio.ahk"
+; 明日方舟护肝助手（GUI）
+scriptTitle3:="ArknightsGUI.ahk - AutoHotkey"
+scriptPath3:="AHK Scripts/ArknightsGUI.ahk"
 
 ; ////////////////////////////////////////////
 ; //////////////////脚本启动器/////////////////
@@ -40,6 +43,16 @@ scriptPath2:="AHK Scripts/SwitchAudio.ahk"
 +F2::sendcmd("重启",scriptTitle2)
 ; 退出
 !+F2::sendcmd("退出",scriptTitle2)
+
+; ////////////////////////////////////////////
+; //////////明日方舟护肝助手（GUI）///////////
+; ////////////////////////////////////////////
+; 运行
+!F3::runScript(scriptPath3, false)
+; 重启
++F3::sendcmd("重启",scriptTitle3)
+; 退出
+!+F3::sendcmd("退出",scriptTitle3)
 
 ; ////////////////////////////////////////////
 ; ////////////////脚本状态管理/////////////////

@@ -1,6 +1,6 @@
 编写了多个 AHK 脚本，逐个启动/关闭嫌麻烦？正在全屏看视频，外卖到了想把声音从耳机切换到音箱上又不想打断观看体验？明日方舟 1-7 刷到精污，阿米娅我不想努力了怎么办？
 
-为了解决以上问题，编写了 AHK 脚本启动管理器 OneStartUp，声音切换助手 SwitchAudio，明日方舟护肝助手 Arknights 这三个脚本。
+为了解决以上问题，编写了 AHK 脚本启动管理器 OneStartUp，声音切换助手 SwitchAudio，明日方舟护肝助手 Arknights 等多个脚本。
 
 # AHK脚本启动管理器 #
 
@@ -19,6 +19,9 @@ AHK 脚本启动管理器 OneStartUp，用来控制所有脚本（包括 OneStar
 | 运行 SwitchAudio              | `Alt` + `F2`           |
 | 重启 SwitchAudio              | `Shift` + `F2`         |
 | 退出 SwitchAudio              | `Alt` + `Shift` + `F2` |
+| 运行 ArknightsGUI | `Alt` + `F3` |
+| 重启 ArknightsGUI | `Shift` + `F3` |
+| 退出 ArknightsGUI | `Alt` + `Shift` + `F3` |
 
 
 # 音量切换助手 #
@@ -55,3 +58,9 @@ AHK 脚本启动管理器 OneStartUp，用来控制所有脚本（包括 OneStar
 ## 模拟器键位 ##
 
 模拟器为 MuMu 模拟器，分辨率为 1440x1080，模拟器支持导入键位配置 ，键鼠方案配置放在 `Others` 目录下。
+
+# 明日方舟护肝助手（GUI） #
+
+利用 AHK 提供的 GUI 功能制作的明日方舟护肝助手图形界面版本，无需记忆各个功能对应的快捷键，点击按钮即可。
+
+![ArknightsGUI](https://i.loli.net/2020/09/10/2CUd63DHy7jmv9B.png)
