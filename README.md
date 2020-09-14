@@ -10,9 +10,9 @@ AHK 脚本启动管理器 OneStartUp，用来控制所有脚本（包括 OneStar
 
 | 功能                        | 快捷键                 |
 | --------------------------- | ---------------------- |
-| 重启 OneStartUp             | `Alt` + `R`            |
-| 以管理员权限运行 OneStartUp | `Alt` + `A`            |
-| 退出 OneStartUp             | `Alt` + `Q`            |
+| 重启 OneStartUp             | `Alt` + `Shift` + `R` |
+| 以管理员权限运行 OneStartUp | `Alt` + `Shift` + `A`  |
+| 退出 OneStartUp             | `Alt` + `Shift` + `Q`  |
 | 运行 Arknights              | `Alt` + `F1`           |
 | 重启 Arknights              | `Shift` + `F1`         |
 | 退出 Arknights              | `Alt` + `Shift` + `F1` |
